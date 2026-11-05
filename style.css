@@ -1,0 +1,35 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+    gap: 20px;
+}
+.navbar a{
+    text-decoration: none;
+    color: #000000;
+}
+.navbar a:hover {
+    color: #642dfc;
+}
+.content {
+    display: flex;
+    align-items:left;
+    height: 100vh;
+}
+.home{
+    display: flex;
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+    gap: 20px;
+}
