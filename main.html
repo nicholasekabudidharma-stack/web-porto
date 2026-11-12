@@ -1,25 +1,156 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wowok Jomok</title>
-    <Link rel="stylesheet" href="style.css">
+    <meta name="description" content="Portofolio perkenalan diri Nicholas, seorang pembelajar yang hobi membaca manga.">
+    <meta name="theme-color" content="#17122b">
+    <title>Nicholas | Portofolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="bg-grid grid-top" aria-hidden="true"></div>
+    <div class="bg-grid grid-bottom" aria-hidden="true"></div>
+
     <nav class="navbar">
-        <div><a href="https://www.google.com">Home</a></div>
-        <div><a href="https://www.facebook.com">About Me</a></div>
-        <div><a href="https://www.instagram.com">Portofolio</a></div>
-        <div><a href="https://www.twitter.com">Contact</a></div>
+        <a href="#home" class="brand">
+            <span class="brand-mark">N</span>
+            <span class="brand-name">Nicholas Eka Budi Dharma<span class="brand-dot">.</span></span>
+        </a>
+
+        <button class="nav-toggle" aria-label="Buka menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#tentang">Tentang</a></li>
+            <li><a href="#hobi">Hobi</a></li>
+            <li><a href="#galeri">Galeri</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+
+        <a href="#kontak" class="nav-cta">Sapa Saya</a>
     </nav>
 
-    <section class="content">
-        <div class="home">
-            <h1>wong saya suka kok</h1>
-            <img src="gambar/foto lucu.jfif" width="500px" height="500px">
-        </div>
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <div class="hero-visual">
+                <div class="photo-frame main-photo" role="button" tabindex="0" aria-label="Buka foto Nicholas">
+                    <img src="gambar/foto_saya.png" alt="Foto Nicholas">
+                </div>
+                <span class="spark spark-blue" aria-hidden="true"></span>
+                <span class="spark spark-green" aria-hidden="true"></span>
+                <span class="spark spark-orange" aria-hidden="true"></span>
+            </div>
 
-    </section>
+            <div class="hero-text">
+                <p class="eyebrow">Senang Berjumpa</p>
+                <h1>Halo, Saya <span class="accent-blue">Nicholas Eka Budi Dharma</span></h1>
+                <p class="lead">
+                    <span id="typed"></span><span class="cursor">|</span>
+                </p>
+                <div class="hero-actions">
+                    <a href="#tentang" class="btn-blue">Kenalan Yuk</a>
+                    <a href="#kontak" class="btn-ghost">Hubungi Saya</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="tentang" class="section reveal">
+            <div class="section-head">
+                <p class="eyebrow">Tentang Saya</p>
+                <h2>Kenalan Lebih Dekat</h2>
+            </div>
+            <p class="section-text">
+                Hai! Nama saya <strong>Nicholas Eka Budi Dharma</strong>. Saya sedang belajar membuat website
+                dan senang mencoba hal-hal baru di dunia teknologi. Portofolio ini adalah
+                tempat saya berbagi cerita tentang diri saya dan hal-hal yang saya sukai.
+            </p>
+            <ul class="info-list">
+                <li><span>Nama</span><strong>Nicholas Eka Budi Dharma</strong></li>
+                <li><span>Hobi</span><strong>Membaca Manga</strong></li>
+                <li><span>Fokus</span><strong>Belajar Web Development</strong></li>
+                <li><span>Status</span><strong>Pelajar</strong></li>
+            </ul>
+        </section>
+
+        <section id="hobi" class="section reveal">
+            <div class="section-head">
+                <p class="eyebrow">Hobi</p>
+                <h2>Membaca Manga</h2>
+            </div>
+            <div class="cards">
+                <article class="card">
+                    <span class="card-badge">01</span>
+                    <h3>Membaca Manga</h3>
+                    <p>
+                        Saya suka membaca manga di waktu luang. Lewat manga saya bisa
+                        menikmati cerita yang menarik, karakter yang unik, dan dunia
+                        yang penuh imajinasi.
+                    </p>
+                    <ul class="tags">
+                        <li>Petualangan</li>
+                        <li>Fantasi</li>
+                        <li>Komedi</li>
+                    </ul>
+                </article>
+            </div>
+        </section>
+
+        <section id="galeri" class="section reveal">
+            <div class="section-head">
+                <p class="eyebrow">Galeri</p>
+                <h2>Momen Pilihan</h2>
+            </div>
+            <div class="gallery">
+                <figure class="gallery-item">
+                    <img src="gambar/Momen.png" alt="Momen" loading="lazy">
+                    <figcaption>Momen</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="gambar/bg.png" alt="Koleksi gambar" loading="lazy">
+                    <figcaption>Koleksi</figcaption>
+                </figure>
+                <figure class="gallery-item">
+                    <img src="gambar/foto lucu.jfif" alt="Foto lucu" loading="lazy">
+                    <figcaption>Foto Lucu</figcaption>
+                </figure>
+            </div>
+        </section>
+    </main>
+
+    <footer id="kontak" class="footer">
+        <div class="footer-inner">
+            <div class="section-head">
+                <p class="eyebrow">Kontak</p>
+                <h2>Mari Menghitamkan</h2>
+            </div>
+            <p>Terima kasih sudah berkunjung ke portofolio saya. Mari berteman!</p>
+            <div class="socials">
+                <a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a>
+                <a href="https://www.twitter.com" target="_blank" rel="noopener">Twitter</a>
+            </div>
+            <p class="copyright">&copy; <span id="year"></span> Nicholas. Dibuat dengan semangat belajar.</p>
+        </div>
+        <div class="footer-blob" aria-hidden="true"></div>
+    </footer>
+
+    <button class="back-to-top" aria-label="Kembali ke atas">&uarr;</button>
+
+    <div class="lightbox" id="lightbox" aria-hidden="true">
+        <button class="lightbox-close" aria-label="Tutup">&times;</button>
+        <img src="" alt="Pratinjau gambar">
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
